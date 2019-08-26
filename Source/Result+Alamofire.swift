@@ -24,8 +24,8 @@
 
 import Foundation
 
-/// `Result` that always has an `Error` `Failure` type.
-public typealias AFResult<T> = Result<T, Error>
+/// `Result` that always has an `AFError` `Failure` type.
+public typealias AFResult<Success> = Result<Success, AFError>
 
 // MARK: - Internal APIs
 
